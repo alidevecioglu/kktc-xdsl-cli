@@ -7,9 +7,9 @@ import chalk from "chalk";
 
 function printData(data) {
     const TableData = [
-        ['XDSL Data', '', '', '', '', ''],
-        ['Phone Number', 'Download Speed', 'Upload Speed', 'Max Download Speed', 'Max Upload Speed', 'Date'],
-        [data.TelNo, data.Down, data.Up, data.MaxDown, data.MaxUp, data.Date]
+        ['XDSL Data', '', '', '', ''],
+        ['Phone Number', 'Download Speed', 'Upload Speed', 'Max Download Speed', 'Max Upload Speed'],
+        [data.TelNo, data.Down, data.Up, data.MaxDown, data.MaxUp]
     ];
     const TableConfig = {
         columns: [
@@ -18,13 +18,13 @@ function printData(data) {
           { alignment: 'center' },
           { alignment: 'center' },
           { alignment: 'center' },
-          { alignment: 'center' }
         ],
         spanningCells: [
-            { col: 0, row: 0, colSpan: 6 },
+            { col: 0, row: 0, colSpan: 5 },
         ],
       };
       console.log(table(TableData, TableConfig));
+      console.log(data.Date)
 }
 
 export default async function welcome() {
