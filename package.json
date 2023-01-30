@@ -1,0 +1,31 @@
+{
+  "name": "kktc-xdsl-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alidevecioglu/kktc-xdsl-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alidevecioglu/kktc-xdsl-cli/issues"
+  },
+  "homepage": "https://github.com/alidevecioglu/kktc-xdsl-cli#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^10.0.0",
+    "conf": "^11.0.1",
+    "console-table-printer": "^2.11.1",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.1.4",
+    "request": "^2.88.2",
+    "table": "^6.8.1"
+  }
+}
